@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #ffe6e6, #ffcccc); /* Gradiente suave */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.seccion {
+    background: #ffffff;
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.seccion:hover {
+    transform: scale(1.01);
+}
+
+.seccion img {
+    max-width: 100%;
+    max-height: 250px;
+    margin: 15px 0;
+    border-radius: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: #e0e0e0;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+input[type="number"]:hover {
+    background-color: #e0f0ff;
+}
+
+.boton-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center; /* Centrar botones */
+    gap: 20px; /* Espaciado uniforme entre botones */
+}
+
+/* Estilo para todos los botones */
+button {
+    background-color: #f44336; /* Color rojo */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+button:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+}
+
+/* Botón específico para "Restablecer" */
+button[type="reset"] {
+    background-color: #f44336; /* Color rojo */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Suaviza el cambio */
+}
+
+button[type="reset"]:hover {
+    background-color: #d32f2f; /* Rojo más oscuro */
+    transform: scale(1.1); /* Crece ligeramente */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    transition: all 0.3s ease; /* Animación fluida */
+}
+
