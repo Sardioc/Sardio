@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5000/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Asistencia Semanal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background: #f5f5f5;
+        }
+        .section {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        .section::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-size: cover;
+            background-position: center;
+            opacity: 0.5;
+            z-index: 0;
+        }
+        .inicial::before {
+            background-image: url('/static/samus.jpg');
+        }
+        .primaria::before {
+            background-image: url('/static/kanade.jpg');
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        input[type="number"] {
+            width: 60px;
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        input[type="number"]:hover {
+            background-color: #e0f0ff;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 15px;
+            border-radius: 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h2 {
+            margin-top: 0;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Asistencia</h1>
+    <form method="post">
+        <div class="section inicial">
+            <div class="content">
+                <h2>Inicial</h2>
+                <table>
+                    <tbody><tr>
+                        <th>Día</th><th>Asistencia</th><th>%</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lunes</td>
+                        <td><input type="number" name="Inicial_lunes" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Martes</td>
+                        <td><input type="number" name="Inicial_martes" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Miércoles</td>
+                        <td><input type="number" name="Inicial_miércoles" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Jueves</td>
+                        <td><input type="number" name="Inicial_jueves" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Viernes</td>
+                        <td><input type="number" name="Inicial_viernes" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                </tbody></table>
+                <p>Promedio Semanal: 0.0%</p>
+            </div>
+        </div>
+        <div class="section primaria">
+            <div class="content">
+                <h2>Primaria</h2>
+                <table>
+                    <tbody><tr>
+                        <th>Día</th><th>Asistencia</th><th>%</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lunes</td>
+                        <td><input type="number" name="Primaria_lunes" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Martes</td>
+                        <td><input type="number" name="Primaria_martes" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Miércoles</td>
+                        <td><input type="number" name="Primaria_miércoles" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Jueves</td>
+                        <td><input type="number" name="Primaria_jueves" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Viernes</td>
+                        <td><input type="number" name="Primaria_viernes" value="0"></td>
+                        <td>0.0%</td>
+                    </tr>
+                    
+                </tbody></table>
+                <p>Promedio Semanal: 0.0%</p>
+            </div>
+        </div>
+        <div class="boton-container">
+            <button type="submit">Calcular</button>
+            <button type="submit" name="reset">Restablecer</button>
+            
+        </div>
+    </form>
+
+</body></html>
